@@ -215,6 +215,19 @@ bpwatch start pylibmc_install
   source $BIN_DIR/steps/pylibmc
 bpwatch stop pylibmc_install
 
+# libffi support.
+# See [`bin/steps/libffi`].
+bpwatch start libffi_install
+  source $BIN_DIR/steps/libffi
+bpwatch stop libffi_install
+
+
+# libffi support.
+# See [`bin/steps/xmlsec1`].
+bpwatch start xmlsec1_install
+  source $BIN_DIR/steps/xmlsec1
+bpwatch stop xmlsec1_install
+
 # Install Mercurial if it appears to be required.
 if (grep -Fiq "hg+" requirements.txt) then
   bpwatch start mercurial_install
