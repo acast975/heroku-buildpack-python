@@ -3,7 +3,8 @@
 # This script is invoked by [`bin/compile`](/).
 
 # The location of the pre-compiled libffi binary.
-VENDORED_LIBFFI="https://s3.amazonaws.com/rt-uploads/libffi-3.0.tgz"
+#VENDORED_LIBFFI="https://s3.amazonaws.com/rt-uploads/libffi-3.0.tgz"
+VENDORED_LIBFFI="http://160.99.9.199/astanimirovic/libffi-3.0.tgz"
 VENDORED_PATH=/app/vendor/libffi-3.0
 
 # Syntax sugar.
